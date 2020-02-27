@@ -1,0 +1,54 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+client/angular/dist
+client/angular//tmp
+client/angular//out-tsc
+# Only exists if Bazel was run
+client/angular//bazel-out
+
+# dependencies
+client/angular/node_modules
+
+# profiling files
+client/angular/chrome-profiler-events*.json
+client/angular/speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+client/angular/.sass-cache
+client/angular/connect.lock
+client/angular/coverage
+client/angular/libpeerconnection.log
+client/angular/npm-debug.log
+client/angular/yarn-error.log
+client/angular/testem.log
+client/angular/typings
+
+# System Files
+client/angular/.DS_Store
+client/angular/Thumbs.db

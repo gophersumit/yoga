@@ -1,0 +1,1 @@
+This folder should have build output of angular application
