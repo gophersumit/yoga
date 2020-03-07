@@ -1,6 +1,10 @@
 # .github/workflows/release.yaml
 
-on: release
+on:
+  push:
+    tags:
+       - '*'
+
 name: Build
 jobs:
   release-linux-386:
