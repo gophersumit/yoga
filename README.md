@@ -1,3 +1,5 @@
+![goreleaser](https://github.com/gophersumit/yoga/workflows/goreleaser/badge.svg)
+
 `Yoga` is a CLI to scaffold and generate Go powered Angular Application with SQL database.
 
 ## Installation
