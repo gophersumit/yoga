@@ -1,6 +1,7 @@
 # .travis.yml
 language: go
-
+go:
+- 1.14.0
 # calls goreleaser
 deploy:
 - provider: script
