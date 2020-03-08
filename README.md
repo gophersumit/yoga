@@ -1,4 +1,5 @@
 ![goreleaser](https://github.com/gophersumit/yoga/workflows/goreleaser/badge.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgophersumit%2Fyoga.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgophersumit%2Fyoga?ref=badge_shield)
 
 `Yoga` is a CLI to scaffold and generate Go powered Angular Application with SQL database.
 
@@ -105,3 +106,6 @@ $ ./web
 
 ## Generators and Support for SQL
 Coming soon
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgophersumit%2Fyoga.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgophersumit%2Fyoga?ref=badge_large)
