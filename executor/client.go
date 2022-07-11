@@ -2,6 +2,8 @@ package executor
 
 import (
 	"fmt"
+	"runtime"
+
 	"github.com/enescakir/emoji"
 )
 
@@ -24,11 +26,20 @@ func checkAngularCLI() {
 	err := ngVersion.Execute()
 	if err != nil {
 		fmt.Println(emoji.ConstructionWorker.String() + " Installing CLI for angular first")
-		ngInstall := Executor{
-			CommandText: "sudo npm install -g @angular/cli --ignore-scripts",
+		if runtime.GOOS == "windows" {
+			ngInstall := Executor{
+				CommandText: "npm install -g @angular/cli --ignore-scripts",
+			}
+			err = ngInstall.Execute()
+			check(err)
+		} else {
+			ngInstall := Executor{
+				CommandText: "sudo npm install -g @angular/cli --ignore-scripts",
+			}
+			err = ngInstall.Execute()
+			check(err)
 		}
-		err = ngInstall.Execute()
-		check(err)
+
 	}
 }
 func createApp(appName string) {

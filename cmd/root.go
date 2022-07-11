@@ -23,8 +23,9 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/viper"
@@ -36,7 +37,7 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "yoga",
 	Short: "CLI for building Go Applications with Angular Frontend",
-	Long:  `TODO`,
+	Long:  `yoga CLI to scaffold Go + Angular App`,
 }
 
 // Execute the command supplied
